@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: Yokai;
+	src: url(/src/lib/fonts/OTYokai-Regular.otf)
+}
+
+:root {}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+#duaLipa2017Album::-webkit-scrollbar {
+	display: none; 
+}
+
+#songsDua2017Container {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-position: -10px 0;
+	font-family: Yokai;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+#root, #__next {
+	isolation: isolate;
+}
+
+.stroke {
+	text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+
+}
+
+.movingBg {
+	animation: move-background 3s linear infinite;
+}
+
+@keyframes move-background {
+	0% {
+		background-position: 0px 0;
+	}
+
+	50% {
+		background-position: -3px -3px;
+	}
+
+	100% {
+		background-position: 0px 0;
+	}
+}
+
+.animOpacity {
+	animation: opacity 2s linear forwards
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100;
+	}
+}
+
+.animFromRight {
+	animation: animFromRight .55s linear forwards
+}
+
+@keyframes animFromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	100% {
+		opacity: 100;
+		transform: translateX(0%);
+	}
+}
+
+.animFromLeft {
+	animation: animFromLeft .55s linear forwards;
+}
+
+@keyframes animFromLeft {
+	0% {
+		opacity: 100;
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+}
+
+#dualipa2017 {
+	filter: url(#noise);
+}
+
+#futureNostalgia {
+	filter: url(#noiseFuture);
+}
+
+.dragging {
+	scroll-behavior: auto;
+	cursor: grab;
+}
+
+.removePointerEvents {
+	user-select: none;
+	pointer-events: none;
+}
