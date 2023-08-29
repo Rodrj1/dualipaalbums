@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 #duaLipa2017Album::-webkit-scrollbar {
-	display: none; 
+	display: none;
 }
 
 #songsDua2017Container {
@@ -137,4 +137,27 @@ p, h1, h2, h3, h4, h5, h6 {
 .removePointerEvents {
 	user-select: none;
 	pointer-events: none;
+}
+
+.flash {
+	animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 1;
+		filter: brightness(1)
+	}
+
+	10% {
+		opacity: 0.8;
+		filter: brightness(3) blur(10px);
+	}
+
+	100% {
+		opacity: 0;
+		display: hidden;
+		visibility: invisble;
+		z-index: -10000000000000000000000000;
+	}
 }

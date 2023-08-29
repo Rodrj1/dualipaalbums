@@ -32,8 +32,6 @@
 			const getOpenHandler = document.getElementById('futureNostalgiaOpen');
 			const getExitHandler = document.getElementById('futureNostalgiaExit');
 
-			console.log(getOpenHandler);
-
 			if (getOpenHandler && getExitHandler) {
 				getOpenHandler.onclick = animateOpenClose;
 				getExitHandler.onclick = animateOpenClose;

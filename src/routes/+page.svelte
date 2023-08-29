@@ -1,12 +1,15 @@
 <script lang="ts">
 	import DuaLipaAlbum2017Showcase from './DuaLipaAlbum2017Showcase.svelte';
 	import DuaLipaFutureNostalgiaShowcase from './DuaLipaFutureNostalgiaShowcase.svelte';
+	import InitialBackground from './InitialBackground.svelte';
 </script>
 
 <svelte:head>
 	<title>Dua Lipa</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+
+<InitialBackground />
 
 <section
 	class="w-[100vw] m-auto border-b border-zinc-500 h-[99vh] overflow-x-auto flex flex-col xl:flex-row justify-center items-center"
@@ -70,6 +73,8 @@
 <DuaLipaAlbum2017Showcase />
 
 <DuaLipaFutureNostalgiaShowcase />
+
+
 
 <svg style="display: none;">
 	<defs>
