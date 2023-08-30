@@ -45,13 +45,11 @@
 <div
 	id="initialBg"
 	role="status"
-	class="bg-grainy w-screen h-screen z-[100000000000000000000] absolute top-0 left-0"
+	class="bg-duamain w-screen h-screen z-[100000000000000000000] absolute top-0 left-0"
 >
-	<h1 class="text-center text-6xl border-b border-zinc-500 ">WELCOME</h1>
-
 	<span
 		id="followingSpan"
-		class="text-3xl text-zinc-900 absolute bg-transparent p-16 rounded-[55%] bg-opacity-50 backdrop-blur-sm"
+		class="text-3xl text-slate-100 absolute bg-transparent p-24 rounded-[55%] bg-opacity-50 backdrop-blur-sm"
 	>
 		ENTER
 	</span>

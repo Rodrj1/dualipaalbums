@@ -20,6 +20,7 @@
 		<div class="flex flex-col sm:flex-row xl:flex-col items-start sm:items-center gap-3">
 			<picture id="album2017Open" class="animOpacity rotate-90 sm:rotate-0">
 				<img
+					loading="lazy"
 					id="dualipa2017"
 					class="h-[25vh] sm:h-[45vh] xl:h-[75vh] w-auto object-cover hover:animate-none transition-all cursor-pointer"
 					src="https://i.pinimg.com/736x/4a/71/1e/4a711ecd52c11679c641c6249052905b.jpg"
@@ -30,19 +31,20 @@
 			<p
 				class="font-mono sm:opacity-0 sm:-translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all h-auto sm:h-[15vh] text-xs sm:text-sm self-start xl:self-center w-[70%]"
 			>
-				Dua Lipa is the debut studio album by Dua Lipa. Released through
-				Warner Records on 2 June 2017, the album is a dance-pop, electropop, and R&B record with
-				elements of disco, hip hop, and tropical house.
+				Dua Lipa is the debut studio album by Dua Lipa. Released through Warner Records on 2 June
+				2017, the album is a dance-pop, electropop, and R&B record with elements of disco, hip hop,
+				and tropical house.
 			</p>
 		</div>
 	</section>
 
 	<section
-		class="group m-auto flex items-center z-[1000] w-[80vw] xl:max-w-[40vw]  sm:border-r border-zinc-500"
+		class="group m-auto flex items-center z-[1000] w-[80vw] xl:max-w-[40vw] sm:border-r border-zinc-500"
 	>
 		<div class="flex flex-col sm:flex-row xl:flex-col items-start sm:items-center gap-3">
 			<picture id="futureNostalgiaOpen" class="animOpacity rotate-90 sm:rotate-0">
 				<img
+					loading="lazy"
 					id="futureNostalgia"
 					class="h-[25vh] sm:h-[45vh] xl:h-[75vh] w-auto object-cover hover:animate-none transition-all cursor-pointer"
 					src="https://i.pinimg.com/originals/84/6f/35/846f35ce5bbe69db45b5b748caeff9b1.jpg"
@@ -53,10 +55,9 @@
 			<p
 				class="font-mono sm:opacity-0 sm:-translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all h-auto sm:h-[15vh] text-xs sm:text-sm self-start xl:self-center w-[70%]"
 			>
-				Future Nostalgia is the second studio album Dua Lipa,
-				released on 27 March 2020 by Warner Records. A "nostalgic" pop and disco record with
-				influences from dance-pop and electronic music, inspired by the music that Lipa enjoyed
-				during her childhood.
+				Future Nostalgia is the second studio album Dua Lipa, released on 27 March 2020 by Warner
+				Records. A "nostalgic" pop and disco record with influences from dance-pop and electronic
+				music, inspired by the music that Lipa enjoyed during her childhood.
 			</p>
 		</div>
 	</section>
@@ -73,8 +74,6 @@
 <DuaLipaAlbum2017Showcase />
 
 <DuaLipaFutureNostalgiaShowcase />
-
-
 
 <svg style="display: none;">
 	<defs>
