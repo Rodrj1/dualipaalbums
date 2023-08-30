@@ -9,8 +9,6 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<InitialBackground />
-
 <section
 	class="w-[100vw] m-auto border-b border-zinc-500 h-[99vh] overflow-x-auto flex flex-col xl:flex-row justify-center items-center"
 >

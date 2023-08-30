@@ -122,7 +122,7 @@ lg:text-5xl xl:text-6xl w-[100%] sm:w-[32.70%] h-[45px] sm:h-32 left-14 sm:borde
 	<div class="absolute border-r border-zinc-500 right-32 h-screen hidden sm:block" />
 
 	<ul
-		class="flex-[0.33] sm:flex-[0.67] flex flex-col overflow-y-hidden overflow-x-hidden w-[100%] box-border transition-transform duration-500 gap-3 mt-[40px] sm:mt-32 max-h-[80vh]"
+		class="flex-[0.33] sm:flex-[0.67] flex flex-col sm:overflow-y-hidden overflow-x-hidden w-[100%] box-border transition-transform duration-500 gap-3 mt-[40px] sm:mt-32 max-h-[80vh]"
 		id="songListFutureNostalgia"
 	>
 		{#each futureNostalgiaSongs as song, i (i)}

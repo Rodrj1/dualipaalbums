@@ -1,7 +1,9 @@
 <script>
 	import Header from './Header.svelte';
 	import { page } from '$app/stores';
+	import { userClicked } from '../store';
 	import './styles.css';
+	import InitialBackground from './InitialBackground.svelte';
 </script>
 
 <div
@@ -10,7 +12,10 @@
 	${$page.url.pathname === '/albums' && 'bg-grainy grayscale-[0.7]'}
 `}
 >
-	<Header />
-
-	<slot />
+	{#if $userClicked}
+		<Header />
+		<slot />
+	{/if}
+	
+	<InitialBackground />
 </div>

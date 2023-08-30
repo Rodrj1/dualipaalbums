@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { userClicked } from '../store';
 
 	let mouseY = 500;
 	let mouseX = 500;
@@ -32,6 +33,8 @@
 			const handleClick = () => {
 				getBg.classList.add('flash');
 
+				$userClicked = true;
+
 				document.removeEventListener('mousemove', handleMouseMovement);
 
 				document.removeEventListener('click', handleClick);
@@ -49,7 +52,7 @@
 >
 	<span
 		id="followingSpan"
-		class="text-3xl text-slate-100 absolute bg-transparent p-24 rounded-[55%] bg-opacity-50 backdrop-blur-sm"
+		class="text-3xl text-slate-100 absolute bg-transparent p-24 rounded-[55%] bg-opacity-50 saturate-[5] backdrop-blur-sm"
 	>
 		ENTER
 	</span>
