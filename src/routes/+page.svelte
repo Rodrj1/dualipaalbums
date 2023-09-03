@@ -18,7 +18,6 @@
 		<div class="flex flex-col sm:flex-row xl:flex-col items-start sm:items-center gap-3">
 			<picture id="album2017Open" class="animOpacity rotate-90 sm:rotate-0">
 				<img
-					loading="lazy"
 					id="dualipa2017"
 					class="h-[25vh] sm:h-[45vh] xl:h-[75vh] w-auto object-cover hover:animate-none transition-all cursor-pointer"
 					src="https://i.pinimg.com/736x/4a/71/1e/4a711ecd52c11679c641c6249052905b.jpg"
@@ -42,7 +41,6 @@
 		<div class="flex flex-col sm:flex-row xl:flex-col items-start sm:items-center gap-3">
 			<picture id="futureNostalgiaOpen" class="animOpacity rotate-90 sm:rotate-0">
 				<img
-					loading="lazy"
 					id="futureNostalgia"
 					class="h-[25vh] sm:h-[45vh] xl:h-[75vh] w-auto object-cover hover:animate-none transition-all cursor-pointer"
 					src="https://i.pinimg.com/originals/84/6f/35/846f35ce5bbe69db45b5b748caeff9b1.jpg"
