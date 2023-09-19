@@ -48,7 +48,7 @@
 <div
 	id="initialBg"
 	role="status"
-	class="bg-duamain w-screen h-screen z-[100000000000000000000] absolute top-0 left-0"
+	class="bg-duamain bg-center w-screen h-screen z-[100000000000000000000] absolute top-0 left-0"
 >
 	<span
 		id="followingSpan"
