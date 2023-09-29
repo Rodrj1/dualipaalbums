@@ -97,15 +97,15 @@
 >
 	<h1
 		class="absolute text-zinc-800 text-3xl sm:text-4xl
-lg:text-5xl xl:text-6xl w-[100%] sm:w-[32.70%] min-h-[45px] sm:h-32 left-14 sm:border-r border-zinc-500"
+lg:text-5xl xl:text-6xl min-h-[45px] sm:h-32 left-14"
 	>
 		DUA LIPA
 	</h1>
 
 	<div
-		class="h-auto flex-[0.67] sm:flex-[0.33] border-t border-r border-zinc-500 mt-10 sm:mt-32 ml-[50px] text-zinc-800 animOpacity px-3 sm:p-3"
+		class="h-auto w-[67%] sm:w-[33%] border-t border-r border-zinc-500 ml-[50px] text-zinc-800 animOpacity px-3 sm:p-3"
 	>
-		<p class="text-sm sm:text-lg flex flex-col gap-5 w-full font-mono">
+		<p class="text-sm sm:text-lg flex flex-col gap-5 w-full font-mono mt-10 sm:mt-48">
 			<span class="block sm:hidden underline">{hoveredSong}</span>
 			{hoveredSongDescription}
 		</p>
@@ -113,7 +113,7 @@ lg:text-5xl xl:text-6xl w-[100%] sm:w-[32.70%] min-h-[45px] sm:h-32 left-14 sm:b
 
 	<h2
 		id="songNameDisplay"
-		class="border-b border-zinc-500 absolute text-zinc-800 text-center w-full text-3xl sm:text-4xl
+		class="border-b border-zinc-500 absolute text-zinc-800 text-left w-[67%] -right-[34px] text-2xl sm:text-4xl
 		lg:text-5xl xl:text-6xl z-50 mt-32 hidden sm:block"
 	>
 		{hoveredSong}
@@ -122,7 +122,7 @@ lg:text-5xl xl:text-6xl w-[100%] sm:w-[32.70%] min-h-[45px] sm:h-32 left-14 sm:b
 	<div class="absolute border-r border-zinc-500 right-32 h-screen hidden sm:block" />
 
 	<ul
-		class="flex-[0.33] sm:flex-[0.67] flex flex-col sm:overflow-y-hidden overflow-x-hidden w-[100%] box-border transition-transform duration-500 gap-3 mt-[40px] sm:mt-32 max-h-[80vh]"
+		class="w-[33%] sm:w-[67%]  flex flex-col sm:overflow-y-hidden overflow-x-hidden box-border transition-transform duration-500 gap-3 mt-[40px] sm:mt-32 max-h-[80vh]"
 		id="songListAlbum2017"
 	>
 		{#each dualipa2017 as song, i (i)}
