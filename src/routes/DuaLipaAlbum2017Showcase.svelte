@@ -108,15 +108,15 @@ lg:text-5xl xl:text-6xl min-h-[45px] sm:h-32 left-14"
 		class="h-auto w-[67%] sm:w-[33%] border-t border-r border-zinc-500 ml-[50px] text-zinc-800 animOpacity px-3 sm:p-3"
 	>
 		<p class="text-sm sm:text-lg flex flex-col gap-5 w-full font-mono mt-10 sm:mt-48">
-			<span class="block sm:hidden underline">{hoveredSong}</span>
+			<span class="block xl:hidden underline">{hoveredSong}</span>
 			{hoveredSongDescription}
 		</p>
 	</div>
 
 	<h2
 		id="songNameDisplay"
-		class="border-b border-zinc-500 absolute text-zinc-800 text-left w-[67%] -right-[34px] text-2xl sm:text-4xl
-		lg:text-5xl xl:text-6xl z-50 mt-32 hidden sm:block"
+		class="border-b border-zinc-500 absolute text-zinc-800 text-left w-[67%] -right-[34px] text-xl sm:text-2xl
+		lg:text-3xl xl:text-4xl z-50 mt-32 hidden xl:block"
 	>
 		{hoveredSong}
 	</h2>
