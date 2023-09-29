@@ -55,15 +55,17 @@
 
 			const scrollList = (e: any) => {
 				if (duaLipaShowcaseIsOpen) {
+					let scrollLength = songListAlbum2017.scrollHeight - songListAlbum2017.clientHeight - 85;
+
 					if (songListAlbum2017.scrollTop <= 0) {
 						songListAlbum2017.scrollTop = 1;
 						scroll2017AlbumBy = 0;
 						return;
 					}
 
-					if (songListAlbum2017.scrollTop > 3825.8) {
-						songListAlbum2017.scrollTop = 3825.8;
-						scroll2017AlbumBy = 3825.8;
+					if (songListAlbum2017.scrollTop > scrollLength) {
+						songListAlbum2017.scrollTop = scrollLength - 1;
+						scroll2017AlbumBy = scrollLength - 1;
 						return;
 					}
 

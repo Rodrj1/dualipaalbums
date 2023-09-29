@@ -55,15 +55,17 @@
 
 			const scrollList = (e: any) => {
 				if (futureNostalgiaAlbumIsOpen) {
+					let scrollLength = songListFutureNostalgia.scrollHeight - songListFutureNostalgia.clientHeight - 85;
+
 					if (songListFutureNostalgia.scrollTop <= 0) {
 						songListFutureNostalgia.scrollTop = 1;
 						scroll2017AlbumBy = 0;
 						return;
 					}
 
-					if (songListFutureNostalgia.scrollTop > 3825.8) {
-						songListFutureNostalgia.scrollTop = 3825.8;
-						scroll2017AlbumBy = 3825.8;
+					if (songListFutureNostalgia.scrollTop > scrollLength) {
+						songListFutureNostalgia.scrollTop = scrollLength - 1;
+						scroll2017AlbumBy = scrollLength - 1;
 						return;
 					}
 
